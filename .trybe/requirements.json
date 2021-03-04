@@ -1,0 +1,84 @@
+{
+  "requirements": [
+    {
+      "identifier": "test_validar_conteudo_do_arquivo_gerado",
+      "description": "Executar o método `analyse_log` deverá preencher corretamente os dados no arquivo `data/mkt_campaign.txt`",
+      "bonus": false
+    },    
+    {
+      "identifier": "test_validar_arquivo_inexistente",
+      "description": "Executar o método `analyse_log` com um arquivo inexistente deverá retornar um erro",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_arquivo_com_extensao_invalida",
+      "description": "Executar o método `analyse_log` com uma extensão inválida deverá retornar um erro",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_classe_inicia_com_len_0",
+      "description": "Instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_adicionar_pedido",
+      "description": "Executar o método `add_new_order` deve adicionar um pedido",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_prato_mais_pedido",
+      "description": "Executar o método `get_most_ordered_dish_per_costumer` irá retornar o prato mais pedido",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_pedido_nunca_feito_pelo_cliente",
+      "description": "Executar o método `get_never_ordered_per_costumer` irá retornar o pedido que o cliente nunca fez",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_dia_que_nunca_foi_feito_pedido",
+      "description": "Executar o método `get_days_never_visited_per_costumer` irá retornar o dias que o cliente nunca visitou",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_dia_mais_movimentado",
+      "description": "Executar o método `get_busiest_day` irá retornar o dia mais movimentado",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_dia_menos_movimentado",
+      "description": "Executar o método `get_least_busy_day` irá retornar o dia menos movimentado",
+      "bonus": false
+    },
+    {
+      "identifier": "test_validar_compra_uma_quantidade_maior_que_o_minimo",
+      "description": "Adicionar uma quantidade maior de ingredientes deverá retornar false",
+      "bonus": true
+    },
+    {
+      "identifier": "test_validar_atualizou_a_quantidade_em_estoque",
+      "description": "Executar o método `get_shopping_list` deverá retornar a lista atualizada de ingredientes",
+      "bonus": true
+    },
+    {
+      "identifier": "test_validar_comprar_todo_estoque_de_hamburguer",
+      "description": "Executar o método `get_shopping_list` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer",
+      "bonus": true
+    },
+    {
+      "identifier": "test_validar_ingrediente_compartilhados",
+      "description": "Executar o método `get_shopping_list` a lista atualizada dos ingredientes que usam receitas diferentes",
+      "bonus": true
+    },
+    {
+      "identifier": "test_listar_todo_os_pratos_com_ingredientes",
+      "description": "Executar o método `get_available_dishes` deverá retornar todos os pratos onde os pratos tem ingredientes",
+      "bonus": true
+    },
+    {
+      "identifier": "test_nao_listar_pratos_sem_ingredientes",
+      "description": "Executar o método `get_available_dishes` não deverá retornar os pratos o qual os ingradientes não sejam suficientes para prepará-los",
+      "bonus": true
+    }
+  ]
+}
