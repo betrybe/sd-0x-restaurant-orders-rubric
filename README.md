@@ -42,7 +42,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 - Trabalhar com Hash map e Dict
 
-- TRabalhar com Set
+- Trabalhar com Set
 
 ---
 
