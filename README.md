@@ -40,6 +40,10 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## Habilidades
 
+- Trabalhar com Hash map e Dict
+
+- TRabalhar com Set
+
 ---
 
 ## O que deverá ser desenvolvido
