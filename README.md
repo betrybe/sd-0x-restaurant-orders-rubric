@@ -129,7 +129,7 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 ---
 
-## Como deenvolver
+## Como desenvolver
 
 **Estrutura do repositório**
 
@@ -156,6 +156,14 @@ $ python3 -m pip install -r dev-requirements.txt
 O arquivo `dev-requirements.txt` contém todos as dependências que serão utilizadas no projeto
 
 Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo.](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1)
+
+## Rodando os testes localmente
+
+Para verificar se o seu projeto está correto basta executar o seguinte comando:
+
+```bash
+$ python3 -m pytest
+```
 
 ## Linter
 
