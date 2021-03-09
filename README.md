@@ -1,8 +1,59 @@
+### Termos e acordos
+
+Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
+Manual da Pessoa Estudante da Trybe.
+
 # Boas vindas ao repositório do projeto Restaurant Orders!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+
+---
+
+# Sumário
+
+- [Habilidades](#habilidades)
+- [Entregáveis](#entregáveis)
+  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+  - [Desenvolvimento](#desenvolvimento)
+  - [Data de Entrega](#data-de-entrega)
+- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
+  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
+- [Como desenvolver](#como-desenvolver)
+  - [Linter](#linter)
+- [Requisitos do projeto](#requisitos-do-projeto)
+
+    `Requisitos obrigatórios:`
+    - [1 - Campanha de publicidade, implemente um método chamado analyze_log no módulo src/analyze_log.py que gere informações de uma lanchonete.](#1---campanha-de-publicidade-implemente-um-método-chamado-analyze_log-no-módulo-srcanalyze_logpy-que-gere-informações-de-uma-lanchonete)
+    - [2 - Análises contínuas, implemente a classe TrackOrders que gere informações contínuas de uma lanchonete.](#2---análises-contínuas-implemente-a-classe-trackorders-que-gere-informações-contínuas-de-uma-lanchonete)
+    
+    `Requisitos bônus:`
+    - [3 - Controle de estoque](#3---controle-de-estoque)
+    - [4 - Estoque pode acabar](#4---estoque-pode-acabar)
+- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
+- [Revisando um pull request](#revisando-um-pull-request)
+- [Avisos Finais](#avisos-finais)
+
+---
+
+## Habilidades
+
+---
+
+## O que deverá ser desenvolvido
+
+A lanchonete Pão na Chapa, atualmente possui um sistema de faturamento dos pedidos dos clientes, que salva o nome da pessoa, o pedido realizado, e dia do atendimento (dia da semana). O projeto consiste em ajudar a lanchonete a melhorar esse sistema para que ele possibilite extração de relatórios e num segundo momento, a controlar seu estoque.
+
+O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, também em duas etapas, totalizando 4 requisitos. Foque nas etapas obrigatórias e com o mesmo cuidado que teria com um cliente real: código limpo, com boa manutenção e legibilidade.
+
+---
+
+## Data de Entrega
+
+  - Serão `X` dias de projeto.
+  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
 
 ---
 
@@ -12,9 +63,9 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 1. Clone o repositório
 
-- `git clone https://github.com/tryber/sd-0x-restaurant-orders-rubric.git`.
+- `git clone git@github.com:tryber/sd-0x-restaurant-orders.git`.
 - Entre na pasta do repositório que você acabou de clonar:
-  - `sd-0x-restaurant-orders-rubric`
+  - `sd-0x-restaurant-orders`
 
 2. Crie o ambiente virtual para o projeto
 
@@ -53,7 +104,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 7. Crie um novo `Pull Request` _(PR)_
 
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-restaurant-orders-rubric-rubric/pulls)
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-restaurant-orders-rubric/pulls)
 - Clique no botão verde _"New pull request"_
 - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 - Clique no botão verde _"Create pull request"_
@@ -63,27 +114,22 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
-## Entregáveis
+### Durante o desenvolvimento
 
-Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter os arquivos do diretório `src` devidamente preenchidos de acordo com as instruções, que conterão seu código `Python` e seus testes, respectivamente.
+- Faça `commits` das alterações que você fizer no código regularmente
 
-### ⚠️ É importante que seus arquivos tenham exatamente os nomes definidos dentro do diretório src! ⚠️
+- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
-
----
-
-## O que deverá ser desenvolvido
-
-A lanchonete Pão na Chapa, atualmente possui um sistema de faturamento dos pedidos dos clientes, que salva o nome da pessoa, o pedido realizado, e dia do atendimento (dia da semana). O projeto consiste em ajudar a lanchonete a melhorar esse sistema para que ele possibilite extração de relatórios e num segundo momento, a controlar seu estoque.
-
-O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, também em duas etapas, totalizando 4 requisitos. Foque nas etapas obrigatórias e com o mesmo cuidado que teria com um cliente real: código limpo, com boa manutenção e legibilidade.
+- Os comandos que você utilizará com mais frequência são:
+  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
+  2. `git add` _(para adicionar arquivos ao stage do Git)_
+  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
+  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
+  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
 
 ---
 
-## Desenvolvimento e testes
+## Como deenvolver
 
 **Estrutura do repositório**
 
@@ -93,7 +139,7 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 - Os testes devem ser implementados nos arquivos do diretório `tests/`.
 
-**Testes**
+## Testes
 
 Para executar os testes, lembre-se de primeiro **criar e ativar o ambiente virtual**, além de também instalar as dependências do projeto. Isso pode ser feito através dos comandos:
 
@@ -111,14 +157,13 @@ O arquivo `dev-requirements.txt` contém todos as dependências que serão utili
 
 Se quiser saber mais sobre a instalação de dependências com `pip`, veja esse [artigo.](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1)
 
-**Estilo**
+## Linter
 
 Para verificar se você está seguindo o guia de estilo do Python corretamente, execute o comando:
 
 ```bash
 $ python3 -m flake8
 ```
-
 ---
 
 ## Requisitos obrigatórios:
@@ -184,11 +229,11 @@ hamburguer;
 
 ##### As seguintes verificações serão feitas:
 
-- Executar o método `analyze_log` deverá preencher corretamente os dados no arquivo `data/mkt_campaign.txt`
+- 1.1 - Executar o método `analyze_log` deverá preencher corretamente os dados no arquivo `data/mkt_campaign.txt`
 
-- Executar o método `analyze_log` com um arquivo inexistente deverá retornar um erro
+- 1.2 - Executar o método `analyze_log` com um arquivo inexistente deverá retornar um erro
 
-- Executar o método `analyze_log` com uma extensão inválida deverá retornar um erro
+- 1.3 - Executar o método `analyze_log` com uma extensão inválida deverá retornar um erro
 
 ### 2 - Análises contínuas, implemente a classe `TrackOrders` que gere informações contínuas de uma lanchonete.
 
@@ -263,19 +308,19 @@ class TrackOrders:
 
 ##### As seguintes verificações serão feitas:
 
-- Instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero.
+- 2.1 - Instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero.
 
-- Executar o metodo `add_new_order` deve adicionar um pedido.
+- 2.2 - Executar o metodo `add_new_order` deve adicionar um pedido.
 
-- Executar o método `get_most_ordered_dish_per_costumer` irá retornar o prato mais pedido.
+- 2.3 - Executar o método `get_most_ordered_dish_per_costumer` irá retornar o prato mais pedido.
 
-- Executar o método `get_never_ordered_per_costumer` irá retornar o pedido que o cliente nunca fez.
+- 2.4 - Executar o método `get_never_ordered_per_costumer` irá retornar o pedido que o cliente nunca fez.
 
-- Executar o método `get_days_never_visited_per_costumer` irá retornar o dias que o cliente nunca visitou.
+- 2.5 - Executar o método `get_days_never_visited_per_costumer` irá retornar o dias que o cliente nunca visitou.
 
-- Executar o método `get_busiest_day` irá retornar o dia mais movimentado.
+- 2.6 - Executar o método `get_busiest_day` irá retornar o dia mais movimentado.
 
-- Executar o método `get_least_busy_day` irá retornar o dia menos movimentado.
+- 2.7 - Executar o método `get_least_busy_day` irá retornar o dia menos movimentado.
 
 ---
 
@@ -340,11 +385,11 @@ class InventoryControl:
 
 ##### As seguintes verificações serão feitas:
 
-- Executar o método `get_quantities_to_buy` deverá retornar a lista atualizada de ingredientes.
+- 3.1 - Executar o método `get_quantities_to_buy` deverá retornar a lista atualizada de ingredientes.
 
-- Executar o método `get_quantities_to_buy` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer.
+- 3.2 - Executar o método `get_quantities_to_buy` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer.
 
-- Executar o método `get_quantities_to_buy` a lista atualizada dos ingredientes que usam receitas diferentes.
+- 3.3 - Executar o método `get_quantities_to_buy` a lista atualizada dos ingredientes que usam receitas diferentes.
 
 ### 4 - Estoque pode acabar
 
@@ -395,47 +440,41 @@ Altere o arquivo `main.py`:
 
 ##### As seguintes verificações serão feitas:
 
-- Adicionar uma quantidade maior de ingredientes deverá retornar false
+- 4.1 - Adicionar uma quantidade maior de ingredientes deverá retornar false
 
-- Executar o método `get_available_dishes` deverá retornar todos os pratos onde os pratos tem ingredientes.
+- 4.2 - Executar o método `get_available_dishes` deverá retornar todos os pratos onde os pratos tem ingredientes.
 
-- Executar o método `get_available_dishes` não deverá retornar os pratos o qual os ingradientes não sejam suficientes para prepará-los.
-
----
-
-### DURANTE O DESENVOLVIMENTO
-
-- Faça `commits` das alterações que você fizer no código regularmente
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-- Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
+- 4.3 - Executar o método `get_available_dishes` não deverá retornar os pratos o qual os ingradientes não sejam suficientes para prepará-los.
 
 ---
 
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO (OPCIONAL)
+## Depois de terminar o desenvolvimento
 
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+Para **"entregar"** seu projeto, siga os passos a seguir:
 
-- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
+* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
 
-  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
-  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
 
 ---
 
-### REVISANDO UM PULL REQUEST
+### Revisando um pull request
 
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
+À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
 
-#VQV 🚀
+Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
+
+# Avisos Finais
+
+Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
+
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
+
+O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
+
+---
