@@ -46,6 +46,18 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
+## Entregáveis
+
+Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter os arquivos do diretório `src` devidamente preenchidos de acordo com as instruções, que conterão seu código `Python` e seus testes, respectivamente.
+
+### ⚠️ É importante que seus arquivos tenham exatamente os nomes definidos dentro do diretório src! ⚠️
+
+Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, procure a monitoria.
+
+Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
+
+---
+
 ## O que deverá ser desenvolvido
 
 A lanchonete Pão na Chapa, atualmente possui um sistema de faturamento dos pedidos dos clientes, que salva o nome da pessoa, o pedido realizado, e dia do atendimento (dia da semana). O projeto consiste em ajudar a lanchonete a melhorar esse sistema para que ele possibilite extração de relatórios e num segundo momento, a controlar seu estoque.
@@ -241,11 +253,11 @@ hamburguer;
 
 ##### As seguintes verificações serão feitas:
 
-- 1.1 - Executar o método `analyze_log` deverá preencher corretamente os dados no arquivo `data/mkt_campaign.txt`
+- 1.1 - Será validado se ao executar o método `analyze_log` os dados são preenchidos de forma correta no arquivo `data/mkt_campaign.txt`
 
-- 1.2 - Executar o método `analyze_log` com um arquivo inexistente deverá retornar um erro
+- 1.2 - Será validado se ao executar o método `analyze_log` com um arquivo inexistente deverá retornar um erro
 
-- 1.3 - Executar o método `analyze_log` com uma extensão inválida deverá retornar um erro
+- 1.3 - Será validado se ao executar o método `analyze_log` com uma extensão inválida deverá retornar um erro
 
 ### 2 - Análises contínuas, implemente a classe `TrackOrders` que gere informações contínuas de uma lanchonete.
 
@@ -320,19 +332,19 @@ class TrackOrders:
 
 ##### As seguintes verificações serão feitas:
 
-- 2.1 - Instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero.
+- 2.1 - Será validado se ao instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero.
 
-- 2.2 - Executar o metodo `add_new_order` deve adicionar um pedido.
+- 2.2 - Será validado se ao executar o metodo `add_new_order` deve adicionar um pedido.
 
-- 2.3 - Executar o método `get_most_ordered_dish_per_costumer` irá retornar o prato mais pedido.
+- 2.3 - Será validado se ao executar `get_most_ordered_dish_per_costumer` irá retornar o prato mais pedido.
 
-- 2.4 - Executar o método `get_never_ordered_per_costumer` irá retornar o pedido que o cliente nunca fez.
+- 2.4 - Será validado se ao executar `get_never_ordered_per_costumer` irá retornar o pedido que o cliente nunca fez.
 
-- 2.5 - Executar o método `get_days_never_visited_per_costumer` irá retornar o dias que o cliente nunca visitou.
+- 2.5 - Será validado se ao executar `get_days_never_visited_per_costumer` irá retornar o dias que o cliente nunca visitou.
 
-- 2.6 - Executar o método `get_busiest_day` irá retornar o dia mais movimentado.
+- 2.6 - Será validado se ao executar o método `get_busiest_day` irá retornar o dia mais movimentado.
 
-- 2.7 - Executar o método `get_least_busy_day` irá retornar o dia menos movimentado.
+- 2.7 - Será validado se ao executar o método `get_least_busy_day` irá retornar o dia menos movimentado.
 
 ---
 
@@ -397,11 +409,11 @@ class InventoryControl:
 
 ##### As seguintes verificações serão feitas:
 
-- 3.1 - Executar o método `get_quantities_to_buy` deverá retornar a lista atualizada de ingredientes.
+- 3.1 - Será validado se ao executar o método `get_quantities_to_buy` deverá retornar a lista atualizada de ingredientes.
 
-- 3.2 - Executar o método `get_quantities_to_buy` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer.
+- 3.2 - Será validado se ao executar o método `get_quantities_to_buy` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer.
 
-- 3.3 - Executar o método `get_quantities_to_buy` a lista atualizada dos ingredientes que usam receitas diferentes.
+- 3.3 - Será validado se ao executar o método `get_quantities_to_buy` a lista atualizada dos ingredientes que usam receitas diferentes.
 
 ### 4 - Estoque pode acabar
 
@@ -452,11 +464,11 @@ Altere o arquivo `main.py`:
 
 ##### As seguintes verificações serão feitas:
 
-- 4.1 - Adicionar uma quantidade maior de ingredientes deverá retornar false
+- 4.1 - Será validado se ao adicionar uma quantidade maior de ingredientes deverá retornar false
 
-- 4.2 - Executar o método `get_available_dishes` deverá retornar todos os pratos onde os pratos tem ingredientes.
+- 4.2 - Será validado se ao executar o método `get_available_dishes` deverá retornar todos os pratos onde os pratos tem ingredientes.
 
-- 4.3 - Executar o método `get_available_dishes` não deverá retornar os pratos o qual os ingradientes não sejam suficientes para prepará-los.
+- 4.3 - Será validado se ao executar o método `get_available_dishes` não deverá retornar os pratos o qual os ingradientes não sejam suficientes para prepará-los.
 
 ---
 
