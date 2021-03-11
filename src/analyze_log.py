@@ -20,10 +20,10 @@ def track_restaurant_orders(path_to_file):
 def analyze_log(path_to_file):
     track = track_restaurant_orders(path_to_file)
     lines = [
-        track.get_most_ordered_dish_per_costumer("maria"),
-        track.get_order_frequency_per_costumer("arnaldo", "hamburguer"),
-        track.get_never_ordered_per_costumer("joao"),
-        track.get_days_never_visited_per_costumer("joao")
+        track.get_most_ordered_dish_per_customer("maria"),
+        track.get_order_frequency_per_customer("arnaldo", "hamburguer"),
+        track.get_never_ordered_per_customer("joao"),
+        track.get_days_never_visited_per_customer("joao")
     ]
 
     with open('data/mkt_campaign.txt', "w", encoding="utf-8") as file:

@@ -5,10 +5,10 @@ from track_orders import TrackOrders
 
 
 def print_info(tracker, control):
-    print(tracker.get_most_ordered_dish_per_costumer('maria'))
-    print(tracker.get_order_frequency_per_costumer('arnaldo', 'hamburguer'))
-    print(tracker.get_never_ordered_per_costumer('joao'))
-    print(tracker.get_days_never_visited_per_costumer('joao'))
+    print(tracker.get_most_ordered_dish_per_customer('maria'))
+    print(tracker.get_order_frequency_per_customer('arnaldo', 'hamburguer'))
+    print(tracker.get_never_ordered_per_customer('joao'))
+    print(tracker.get_days_never_visited_per_customer('joao'))
     print(control.get_quantities_to_buy())
 
 
@@ -25,8 +25,8 @@ def main():
 
     with open(path) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
-        for costumer, order, day in csv_reader:
-            pub.sendMessage(topic, costumer=costumer, order=order, day=day)
+        for customer, order, day in csv_reader:
+            pub.sendMessage(topic, customer=customer, order=order, day=day)
 
     print_info(tracker, control)
 

@@ -25,8 +25,8 @@ class InventoryControl:
             'frango': 0,
         }
 
-    def add_new_order(self, costumer, order, day):
-        print(f"{costumer}  {order}  {day} Control")
+    def add_new_order(self, customer, order, day):
+        print(f"{customer}  {order}  {day} Control")
         if order not in self.get_available_dishes():
             print('false')
             return False

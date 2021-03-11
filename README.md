@@ -301,16 +301,16 @@ class TrackOrders:
     def __len__(self):
       pass
 
-    def add_new_order(self, costumer, order, day):
+    def add_new_order(self, customer, order, day):
         pass
 
-    def get_most_ordered_dish_per_costumer(self, costumer):
+    def get_most_ordered_dish_per_customer(self, customer):
         pass
 
-    def get_dish_quantity_per_costumer(self, costumer, order):
+    def get_dish_quantity_per_customer(self, customer, order):
         pass
 
-    def get_never_ordered_per_costumer(self, costumer):
+    def get_never_ordered_per_customer(self, customer):
         pass
 
     def get_busiest_day(self):
@@ -336,11 +336,11 @@ class TrackOrders:
 
 - 2.2 - Será validado se, ao executar o método `add_new_order`, o método deve adicionar um pedido.
 
-- 2.3 - Será validado se, ao executar `get_most_ordered_dish_per_costumer`, o método retorna o prato mais pedido.
+- 2.3 - Será validado se, ao executar `get_most_ordered_dish_per_customer`, irá retornar o prato mais pedido.
 
-- 2.4 - Será validado se, ao executar `get_never_ordered_per_costumer`, o método retorna o pedido que o cliente nunca fez.
+- 2.4 - Será validado se, ao executar `get_never_ordered_per_customer`, irá retornar o pedido que o cliente nunca fez.
 
-- 2.5 - Será validado se, ao executar `get_days_never_visited_per_costumer`, o método retorna o dias que o cliente nunca visitou.
+- 2.5 - Será validado se, ao executar `get_days_never_visited_per_customer`, irá retornar o dias que o cliente nunca visitou.
 
 - 2.6 - Será validado se, ao executar o método `get_busiest_day`, o método retorna o dia mais movimentado.
 
@@ -388,7 +388,7 @@ class InventoryControl:
             'frango': 50,
         }
 
-    def add_new_order(self, costumer, order, _day):
+    def add_new_order(self, customer, order, _day):
         pass
 
     def get_quantities_to_buy(self):
