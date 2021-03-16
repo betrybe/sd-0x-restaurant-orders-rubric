@@ -120,7 +120,7 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 7. Crie um novo `Pull Request` _(PR)_
 
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-restaurant-orders-rubric/pulls)
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-restaurant-orders/pulls)
 - Clique no botão verde _"New pull request"_
 - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 - Clique no botão verde _"Create pull request"_
@@ -332,7 +332,7 @@ class TrackOrders:
 
 ##### As seguintes verificações serão feitas:
 
-- 2.1 - Será validado se ao instanciar a classe `TrackOrders` pela primeira vez deve ter a quantiade de pedidos igual á zero.
+- 2.1 - Será validado se ao instanciar a classe `TrackOrders` pela primeira vez a quantidade de pedidos é igual a zero.
 
 - 2.2 - Será validado se ao executar o metodo `add_new_order` deve adicionar um pedido.
 
@@ -413,7 +413,7 @@ class InventoryControl:
 
 - 3.2 - Será validado se ao executar o método `get_quantities_to_buy` deverá retornar toda a quantiade de ingredientes há se comprar de hamburguer.
 
-- 3.3 - Será validado se ao executar o método `get_quantities_to_buy` a lista atualizada dos ingredientes que usam receitas diferentes.
+- 3.3 - Será validado se ao executar o método `get_quantities_to_buy` retorna-se a lista atualizada dos ingredientes que usam receitas diferentes.
 
 ### 4 - Estoque pode acabar
 
