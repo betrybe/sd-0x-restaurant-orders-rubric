@@ -23,7 +23,7 @@ class InventoryControl:
             'presunto': 0,
             'massa': 0,
             'frango': 0,
-        }  # hardcoded? sim, culpe o avaliador :V
+        }
 
     def add_new_order(self, costumer, order, day):
         print(f"{costumer}  {order}  {day} Control")
@@ -41,8 +41,8 @@ class InventoryControl:
         available_dishes = set(self.ingredients.keys())
         for dish, ingredients in self.ingredients.items():
             for ingredient in ingredients:
-                minimun = self.minimum_inventory[ingredient]
-                if minimun <= self.inventory[ingredient]:
+                minimum = self.minimum_inventory[ingredient]
+                if minimum <= self.inventory[ingredient]:
                     available_dishes.remove(dish)
                     break
 
