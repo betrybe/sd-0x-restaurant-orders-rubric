@@ -165,14 +165,13 @@ def analyze_log(path_to_file):
 **Saída correta:**
 
 ```
-hamburguer;
-
-1;
-
-{'pizza', 'coxinha', 'misto-quente'};
-
+hamburguer
+1
+{'pizza', 'coxinha', 'misto-quente'}
 {'sabado', 'segunda-feira'}
 ```
+
+> A órdem dos pedidos, bem como dos dias não precisa ser exatamente a apresentada no exemplo
 
 - No arquivo analyze_log.py deve estar implementada a função `def analyze_log(path_to_file)`;
 
